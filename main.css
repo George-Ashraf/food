@@ -1,0 +1,628 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    z-index: 10000;
+    height: 80px;
+}
+.sticky{
+    transition: all 1s;
+    box-shadow: 0px 15px 50px black;
+}
+
+.navbar .navbar-brand {
+    color: black;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.navbar .navbar-brand i {
+    color: orange;
+    margin-right: 5px;
+    font-size: 30px;
+}
+
+.navbar .sandwish {
+    width: 160px;
+    height: 80px;
+    position: absolute;
+    right: 50%;
+}
+
+.navbar .sandwish img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    color: black;
+    font-weight: bold;
+    position: relative;
+}
+
+.navbar ul li a:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    width: 0px;
+    height: 4px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover a:before {
+    transition: 0.5s;
+    width: 45%;
+    transform: translateX(100%);
+}
+
+
+
+.home {
+    margin-top: 80px;
+    width: 100%;
+    height: auto;
+
+}
+
+.home .row {
+    justify-content: center;
+}
+
+.home .welcome {
+    height: auto;
+    padding-bottom: 30px;
+}
+
+.home .welcome h2 {
+    color: orange;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.home .welcome h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+.mobile{
+    display: none;
+}
+
+.home .welcome h1 .fa-f {
+    position: relative;
+    left: 12px;
+}
+
+.home .welcome h1 span img {
+    position: relative;
+    right: 0px;
+    width: 50px;
+
+}
+
+.home .welcome h1 span #d1 {
+    position: relative;
+    right: 10px;
+}
+
+.home .welcome h1 span #d2 {
+    position: relative;
+    right: 30px;
+}
+
+.home .welcome h1 .fa-d {
+    position: relative;
+    right: 40px;
+}
+
+.home .welcome h1 .fa-face-smile {
+    left: 0;
+    right: 0;
+    color: orange;
+}
+
+
+.home .welcome h1 span {
+    width: 90px;
+    height: 50px;
+}
+
+.home .welcome p {
+    margin: 30px 0;
+}
+
+.home .welcome button {
+    width: 180px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    background-color: orange;
+    color: white;
+    font-weight: 500;
+    box-shadow: 5px 5px 50px orange;
+}
+
+
+
+.home .dish {
+    height: auto;
+   padding: 0;
+    
+}
+
+.home .dish img {
+
+    width: 100%;
+    height: 100%;
+}
+
+#about {
+    background: linear-gradient(180deg, rgba(255, 148, 1, 0.05) 0%, rgba(255, 237, 211, 0) 100%);
+
+}
+
+.service {
+    width: 100%;
+    height: auto;
+    padding-bottom: 100px;
+}
+
+
+.service .row {
+    justify-content: center;
+}
+
+.service p {
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.service header {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+}
+
+.service header .left {
+    position: absolute;
+    left: -50px;
+    z-index: 1;
+
+
+}
+
+.service header .right {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    z-index: 1;
+}
+
+.service header p {
+    color: orange;
+    font-weight: bold;
+}
+
+.service .ser {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.service .ser .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+
+.service .ser .img img {
+    height: 100%;
+    height: 100%;
+}
+
+.service .ser h1 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.service .ser p {
+    font-size: 16px;
+}
+
+.recipes {
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+    background: linear-gradient(180deg, rgba(255, 148, 1, 0.05) 0%, rgba(255, 237, 211, 0) 100%);
+
+}
+
+.recipes header {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipes header .title {
+    text-align: center;
+    height: auto;
+    width: 50%;
+}
+
+.recipes header .title p {
+    text-align: center;
+    color: orange;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.recipes header .img {
+    width: 100px;
+    height: auto;
+}
+
+.recipes header .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.recipes .food {
+    width: 100%;
+}
+
+.recipes .food .row {
+    justify-content: center;
+}
+
+.recipes .food .f {
+    height: auto;
+    background-color: #fff;
+    box-shadow: 5px 5px 100px rgba(255, 166, 0, 0.584);
+
+    margin: 10px 20px;
+    padding: 0 0 20px 0;
+}
+
+.recipes .food .f .img {
+    width: 100%;
+    height: 200px;
+}
+
+.recipes .food .f .img img {
+    border: 10px solid white;
+    width: 100%;
+    height: 100%;
+}
+
+.recipes .food .f .information {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.recipes .food .f .information .info {
+    width: 50%;
+    height: auto;
+}
+
+.recipes .food .f .information .info p {
+    font-weight: bold;
+    margin: 10px 0 0 10px;
+
+}
+
+.recipes .food .f .information .info button {
+    width: 80px;
+    font-size: 10px;
+    border-radius: 15px;
+    border: none;
+    margin: 10px 0 0 10px;
+    background-color: lightgrey;
+}
+
+.recipes .food .f .information .info .rate {
+    color: lightgray;
+    text-align: right;
+    margin-right: 10px;
+}
+
+
+.recipes .food .f .information .info .price {
+    color: orange;
+    text-align: right;
+    margin-right: 10px;
+
+}
+
+.recipes .button {
+    width: 180px;
+    height: 50px;
+    margin: 50px auto 0 auto;
+    display: flex;
+}
+
+.recipes .button button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+#order {
+    position: relative;
+}
+
+#order .left {
+    position: absolute;
+    width: 210px;
+    top: 0;
+    left: 0;
+}
+
+#order .right {
+    position: absolute;
+    width: 300px;
+    top: 0;
+    right: 0;
+}
+
+#order .button {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+#order  .button button {
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: none;
+    font-size: 20px;
+    margin-right: 5px;
+    display: flex;
+}
+
+#order .button button .logo{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#order .button button .logo i {
+  
+    font-size: 40px;
+    color: white;
+}
+#order  .button button .text{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#order .button button .text p {
+    font-size: 7px;
+   
+}
+
+#order  .button button .text p span {
+    font-size: 20px;
+}
+
+#order .button #google {
+    background-color: #fff;
+    border: solid black 2px;
+    color: black;
+}
+
+
+
+#order  .button #google .logo i {
+    color: black;
+
+}
+#testimonial .welcome .opinion{
+    width: 100%;
+    height: auto;
+}
+#testimonial .welcome .opinion p{
+    font-weight: bold;
+}
+#testimonial .welcome .opinion .signature{
+    width: 100%;
+    height: auto;
+}
+#testimonial .welcome .opinion .signature h5{
+    font-size: 30px;
+}
+#testimonial .welcome .opinion .signature h5 span{
+    font-size: 16px;
+    color: grey;
+    
+}
+
+
+#prev,
+#next
+{
+    margin-top: 200px;
+    width: 50px;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(180deg, rgba(255, 148, 1, 0.05) 0%, rgba(255, 237, 211, 0) 100%);
+    position: relative;
+    
+}
+footer  .left img{
+    position: absolute;
+    left: 0;
+}
+footer .right{
+    position: absolute;
+    top: -40px;
+    right: 0;
+}
+
+footer .row{
+    padding-top: 50px;
+    justify-content: center;
+}
+footer .contact{
+    height: auto;
+}
+
+footer .contact li{
+    list-style-type: none;
+    margin: 15px  0  ;
+}
+footer .contact li i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+footer .contact  .fa-burger{
+    color: orange;
+}
+footer .links{
+    height: auto;
+
+    text-align: center;
+}
+footer .links .head{
+    font-weight: bold;
+}
+footer .links li{
+    list-style-type: none;
+    margin:  25px  0;
+}
+footer .copy{
+    padding: 20px 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+footer .copy a{
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+}
+@media (max-width:480px){
+
+    .navbar-collapse{
+        background-color: #fff;
+        text-align: center;
+        max-width: 100%;
+    }
+    .navbar .sandwish {
+       display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .home .welcome h1 {
+        font-size: 40px;
+    }
+    .desktob{
+        display: none;
+    }
+
+ 
+
+    .service header .left {
+display: none;    
+    
+    }
+    
+    .service header .right {
+       display: none;
+    }
+
+    .recipes header .title h1 {
+        
+        font-size: 20px;
+    }
+    #order .left {
+      display: none;
+    }
+    
+    #order .right {
+      display: none;
+    }
+    footer  .left img{
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 200px;
+}
+
+}
+@media (min-width:481px) and (max-width:890px) {
+
+    .navbar-collapse{
+        background-color: #fff;
+        text-align: center;
+        max-width: 100%;
+    }
+    
+
+
+
+
+
+    
+    
+ 
+  
+    .service .ser h1 {
+        font-size: 40px;
+    }
+    
+  
+    
+    .recipes .food .f .img {
+        height: 400px;
+    }
+    #order .left {
+        display: none;
+      }
+      
+      #order .right {
+        display: none;
+      }
+  
+}
+
+
+
+
